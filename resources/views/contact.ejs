@@ -1,0 +1,43 @@
+<%- include('../partials/nav') %>
+
+
+<div class="container main_header mt-3">
+    <div class="row">
+        <div class="coats col-md-6 mx-auto  p-5">
+            <h1 class="text-center">Please fill the form</h1>
+            <form action="/send" method="POST">
+
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Email address</label>
+                    <input type="email" name="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@example.com">
+                </div>
+
+
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Name</label>
+                    <input type="text" name="name" class="form-control" id="exampleFormControlInput1"
+                        placeholder="Enter your name">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Tell us about ur visit here.</label>
+                    <textarea class="form-control" name="markdown" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+
+                <button class="btn btn-primary" type="submit">send</button>
+
+
+            </form>
+
+        </div>
+    </div>
+</div>
+</div>
+
+
+</div>
+
+
+
+<%- include('../partials/footer') %>
